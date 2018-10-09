@@ -2,7 +2,7 @@ FROM nginx
 
 # Ruby
 RUN apt-get -y update
-RUN apt-get -y install ruby ruby-dev make gcc nodejs
+RUN apt-get -y install ruby ruby-dev build-essential nodejs
 
 # Jekyll
 RUN gem install jekyll bundler octopress-autoprefixer
